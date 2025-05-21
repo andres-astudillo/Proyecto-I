@@ -2,8 +2,8 @@ import passport from "passport";
 import { Strategy as LocalStrategy } from "passport-local";
 import { ExtractJwt, Strategy as PassportStrategy } from "passport-jwt";
 import { usersManager } from "../data/managers/mongo/manager.mongo.js";
-import { compareHash, createHash } from "../helpers/hash.helper.js";
-import { createToken } from "../helpers/token.helper.js";
+import { compareHash, createHash } from "../helpers/hash.helpers.js";
+import { createToken } from "../helpers/token.helpers.js";
 import { Strategy as googleStrategy } from "passport-google-oauth2";
 
 /* Register */

@@ -1,5 +1,5 @@
 import { usersManager } from "../data/managers/mongo/manager.mongo.js";
-import { verifyToken } from "../helpers/token.helper.js";
+import { verifyToken } from "../helpers/token.helpers.js";
 
 const setupPolicies = (policies) => async (req, res, next) => {
     try {

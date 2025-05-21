@@ -1,0 +1,53 @@
+<head>
+    <link rel="stylesheet" href="/css/details.css">
+</head>
+
+<div id="detailsDivTitle">
+    <section id="detailsDivSectTop">
+        <h2 id="detailsh2Title">Details of Product</h2>
+    </section>
+    <section id="detailsDivSectMiddle">
+        <div class="detailsUlLiDiv">
+            <img class="detailsUlLih6" src="{{product.image}}" alt="{{product._id}}">
+        </div>
+        <div class="detailsUlLiDiv">
+            <h3 class="detailsUlLih3">Code: </h3>
+            <h3 class="detailsUlLih3">{{product._id}}</h3>
+        </div>
+        <div class="detailsUlLiDiv">
+            <h3 class="detailsUlLih3">Title: </h3>
+            <h3 class="detailsUlLih3">{{product.title}}</h3>
+        </div>
+        <div class="detailsUlLiDiv">
+            <h3 class="detailsUlLih3">$</h4>
+            <h3 class="detailsUlLih3">{{product.price}}</h3>
+        </div>
+        <div class="detailsUlLiDiv">
+            <h3 class="detailsUlLih3">Code: </h4>
+            <h3 class="detailsUlLih3">{{product.code}}</h3>
+        </div>
+        <div class="detailsUlLiDiv">
+            <h3 class="detailsUlLih3">Stock: </h5>
+            <h3 class="detailsUlLih3">{{product.stock}}</h3>
+        </div>
+        <div class="detailsUlLiDiv">
+            <h3 class="detailsUlLih3">Category: </h6>
+            <h3 class="detailsUlLih3">{{product.category}}</h3>
+        </div>
+        <div class="detailsUlLiDiv">
+            <h3 class="detailsUlLih3">Status: </h6>
+            <h3 class="detailsUlLih3">{{product.status}}</h3>
+        </div>
+        <div class="detailsUlLiDiv">
+            <p class="detailsUlLiP">Description: </p>
+            <p class="detailsUlLiP">{{product.description}}</p>
+        </div>
+        <div class="detailsUlLiDivBottom">
+            <div class="detailsUlLiDivBottomQuantity">
+                <p class="detailsUlLiDivBottomQuantityP">Quantity: </p>
+                <input type="number" id="detailsUlLiDivBottomQuantityInput">
+            </div>
+            <button class="btn btn-outline-success btnAddProductToCart">Add to Cart</button>
+        </div>
+    </section>
+</div>

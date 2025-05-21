@@ -1,4 +1,4 @@
-import passport from "./passport.mid.js";
+import passport from "./passport.middlewares.js";
 
 const passportCB = (strategy) => async (req, res, next) => {
     passport.authenticate(strategy, (error, user, info) => {

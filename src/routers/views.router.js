@@ -1,6 +1,6 @@
 import { productsManager } from "../data/managers/mongo/manager.mongo.js";
 import { isValidObjectId } from "mongoose";
-import RouterHelper from "../helpers/router.helper.js";
+import RouterHelper from "../helpers/router.helpers.js";
 
 const indexView = async (req, res) => {
     const products = await productsManager.readAll();

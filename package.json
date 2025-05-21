@@ -2,6 +2,7 @@
   "name": "proyecto-i",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "start": "node ./index.js ",
     "dev": "node --watch ./index.js",
@@ -28,5 +29,5 @@
   "devDependencies": {
     "@types/connect-mongo": "^3.1.2",
     "@types/node": "^22.15.18"
-  },
+  }
 }

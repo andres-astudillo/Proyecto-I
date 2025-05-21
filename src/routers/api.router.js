@@ -3,7 +3,7 @@ import cartsRouter from "./api/carts.router.js";
 import usersRouter from "./api/users.router.js";
 import cookiesRouter from "./api/cookies.router.js";
 import authRouter from "./api/auth.router.js";
-import RouterHelper from "../helpers/router.helper.js";
+import RouterHelper from "../helpers/router.helpers.js";
 
 class ApiRouter extends RouterHelper {
     constructor() {

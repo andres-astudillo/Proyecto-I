@@ -1,0 +1,52 @@
+<head>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+
+<div id="indexDivHead">
+    <h1 id="indexDivH1">Products List</h1>
+</div>
+<div id="indexProductAddDiv"></div>
+<div>
+    <section>
+        <ul id="productsGrid">
+            {{#each products}}
+            <li>
+                <div class="card" style="width: 18rem;" id="productDivCard">
+                    <div class="productsUlLiDiv">
+                        <img src={{this.image}} class="card-img-top object-fit-cover" alt={{this._id}}>
+                    </div>
+                    <div class="card-body">
+                        <div class="productsUlLiDiv">
+                            <h3 class="productsUlLih3">Title: </h3>
+                            <h3 class="card-textv productsUlLih3" id="productTitleId">{{this.title}}</h3>
+                        </div>
+                        <div class="productsUlLiDiv">
+                            <h3 class="productsUlLih3">Category: </h3>
+                            <h3 class="card-textv productsUlLih3">{{this.category}}</h3>
+                        </div>
+                        <div class="productsUlLiDiv">
+                            <h3 class="productsUlLih3">$ </h3>
+                            <h3 class="card-textv productsUlLih3">{{this.price}}</h3>
+                        </div>
+                        <div class="productsUlLiDiv">
+                            <h3 class="productsUlLih3">Code: </h3>
+                            <h3 class="card-textv productsUlLih3">{{this.code}}</h3>
+                        </div>
+                        <div class="productsUlLiDiv">
+                            <h3 class="productsUlLih3">Stock: </h3>
+                            <h3 class="card-textv productsUlLih3">{{this.stock}}</h32>
+                        </div>
+                        <div class="productsUlLiDiv">
+
+                            <a href="/details/{{this._id}}" class="btn btn-primary">More Details</a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+    </section>
+    </ul>
+
+</div>
+
+<script src="/scripts/index.js"></script>

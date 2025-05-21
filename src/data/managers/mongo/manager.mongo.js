@@ -1,5 +1,5 @@
-import User from "../../models/users.model.js";
-import Product from "../../models/products.model.js";
+import User from "../../models/users.models.js";
+import Product from "../../models/products.models.js";
 import Cart from "../../models/carts.models.js";
 
 class Manager {
