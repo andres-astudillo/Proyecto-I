@@ -1,6 +1,6 @@
-import User from "../../models/users.models.js";
-import Product from "../../models/products.models.js";
-import Cart from "../../models/carts.models.js";
+import User from "./models/users.model.js";
+import Product from "./models/products.model.js";
+import Cart from "./models/carts.models.js";
 
 class Manager {
     constructor(model) {
@@ -18,4 +18,4 @@ const usersManager = new Manager(User);
 const productsManager = new Manager(Product);
 const cartsManager = new Manager(Cart);
 
-export { usersManager, productsManager,cartsManager };
+export { usersManager, productsManager, cartsManager };

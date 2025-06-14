@@ -1,6 +1,7 @@
+import { Router } from "express";
 import viewsRouter from './views.router.js';
 import apiRouter from "./api.router.js";
-import RouterHelper from "../helpers/router.helpers.js";
+import RouterHelper from "../helpers/router.helper.js";
 
 class IndexRouter extends RouterHelper {
     constructor() {
