@@ -25,7 +25,8 @@ document.getElementById("btnRegister").addEventListener("click", async () => {
             alert(response.error);
         } else {
             alert("Registered Success!");
-            location.replace("/login");
+            alert("Please Verify your email to get the Code!");
+            location.replace(`/verify/${email}`);
         }
     } catch (error) {
         console.log(error.message);

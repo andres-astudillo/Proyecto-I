@@ -5,7 +5,7 @@
 
 #detailsh2Title {
     margin: 15px;
-    color: green;
+    color: rgb(13, 0, 128);
 }
 
 #detailsDivSectMiddle {
@@ -47,6 +47,6 @@
     height: 100%;  
 }
 
-.btnAddProductToCart {
+#btnAddProductToCart {
     margin: 10px;
 }

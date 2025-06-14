@@ -7,7 +7,7 @@
 
 #profileDivH2Title {
     margin: 15px;
-    color: green;
+    color: rgb(0, 19, 128);
 }
 
 #profileDivDivSectMiddle {
@@ -32,4 +32,8 @@
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+#btnResetPassword {
+    margin-right: 15px;
 }
